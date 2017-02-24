@@ -117,6 +117,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXe-Qk-r17">
                                 <rect key="frame" x="20" y="431" width="374" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="stateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTq-tA-fNL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5p-60-16U">
                                 <rect key="frame" x="95" y="643" width="225" height="45"/>
@@ -125,10 +128,20 @@
                                     <constraint firstAttribute="width" constant="225" id="ZeT-Rx-1RJ"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="buyNowBtn"/>
+                                <connections>
+                                    <action selector="buyBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mV7-4e-saR"/>
+                                </connections>
                             </button>
                             <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ER-Qt-it2">
-                                <rect key="frame" x="47" y="469" width="320" height="216"/>
+                                <rect key="frame" x="47" y="465" width="320" height="216"/>
                             </pickerView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="fsB-OQ-q3u">
+                                <rect key="frame" x="59" y="219" width="299" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="299" id="PFj-LF-WhF"/>
+                                    <constraint firstAttribute="width" constant="299" id="duU-nJ-0o4"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -158,11 +171,12 @@
                             <constraint firstItem="Duc-BJ-DAE" firstAttribute="top" secondItem="Qwc-Oc-zv2" secondAttribute="bottom" constant="8" id="QzM-j7-c7b"/>
                             <constraint firstItem="ql7-z3-2K7" firstAttribute="top" secondItem="YIr-0I-C6B" secondAttribute="bottom" constant="8" id="Rox-tg-Pct"/>
                             <constraint firstItem="bkf-L4-i7f" firstAttribute="leading" secondItem="JQ9-rd-eAJ" secondAttribute="leading" id="Uly-vL-0a3"/>
+                            <constraint firstItem="fsB-OQ-q3u" firstAttribute="top" secondItem="JQ9-rd-eAJ" secondAttribute="bottom" constant="26" id="VQe-AP-qeW"/>
                             <constraint firstItem="YIr-0I-C6B" firstAttribute="leading" secondItem="gGW-n2-QSD" secondAttribute="leading" id="VXf-f0-d0K"/>
                             <constraint firstItem="gGW-n2-QSD" firstAttribute="leading" secondItem="uKi-3S-5wd" secondAttribute="leading" id="WOI-Q7-S0N"/>
                             <constraint firstItem="Rf2-aT-fIx" firstAttribute="top" secondItem="YcY-HO-uj2" secondAttribute="bottom" constant="8" id="YVg-OG-K6Y"/>
                             <constraint firstItem="uKi-3S-5wd" firstAttribute="leading" secondItem="bkf-L4-i7f" secondAttribute="leading" id="ZDM-jM-n2z"/>
-                            <constraint firstItem="8ER-Qt-it2" firstAttribute="top" secondItem="yXe-Qk-r17" secondAttribute="bottom" constant="8" id="b3b-ms-GcD"/>
+                            <constraint firstItem="8ER-Qt-it2" firstAttribute="top" secondItem="yXe-Qk-r17" secondAttribute="bottom" constant="4" id="b3b-ms-GcD"/>
                             <constraint firstItem="ql7-z3-2K7" firstAttribute="trailing" secondItem="YIr-0I-C6B" secondAttribute="trailing" id="dCb-z0-HrG"/>
                             <constraint firstItem="Qwc-Oc-zv2" firstAttribute="top" secondItem="zEV-mJ-DZX" secondAttribute="bottom" constant="8" id="fb9-oQ-yfa"/>
                             <constraint firstItem="VuN-oh-BgI" firstAttribute="top" secondItem="ql7-z3-2K7" secondAttribute="bottom" constant="8" id="gDJ-sE-3TW"/>
@@ -181,9 +195,31 @@
                             <constraint firstItem="Qwc-Oc-zv2" firstAttribute="trailing" secondItem="zEV-mJ-DZX" secondAttribute="trailing" id="waW-7D-zdJ"/>
                             <constraint firstItem="yXe-Qk-r17" firstAttribute="top" secondItem="3zV-cg-k5t" secondAttribute="bottom" constant="8" id="xW4-DA-RYD"/>
                             <constraint firstItem="YcY-HO-uj2" firstAttribute="centerX" secondItem="G69-Uz-PSJ" secondAttribute="centerX" id="yiZ-VS-MLl"/>
+                            <constraint firstItem="fsB-OQ-q3u" firstAttribute="centerX" secondItem="G69-Uz-PSJ" secondAttribute="centerX" id="yqd-Mp-Ry0"/>
                             <constraint firstItem="YIr-0I-C6B" firstAttribute="top" secondItem="gGW-n2-QSD" secondAttribute="bottom" constant="8" id="zvC-aF-j3N"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addField" destination="YIr-0I-C6B" id="zy9-Xk-IFZ"/>
+                        <outlet property="addTitle" destination="gGW-n2-QSD" id="Y3h-Dm-gWr"/>
+                        <outlet property="appLogo" destination="G69-Uz-PSJ" id="zwA-TZ-U2c"/>
+                        <outlet property="appTitle" destination="YcY-HO-uj2" id="3S3-kD-ycF"/>
+                        <outlet property="buyBtn" destination="u5p-60-16U" id="mLy-Te-W46"/>
+                        <outlet property="cityField" destination="VuN-oh-BgI" id="xaa-jF-8CT"/>
+                        <outlet property="cityTitle" destination="ql7-z3-2K7" id="d5n-x1-I0I"/>
+                        <outlet property="countryField" destination="zEV-mJ-DZX" id="0lt-wp-ohl"/>
+                        <outlet property="countryTitle" destination="eSG-pH-GIX" id="uNY-g9-BKy"/>
+                        <outlet property="divider" destination="JQ9-rd-eAJ" id="BTw-H7-0xm"/>
+                        <outlet property="nameField" destination="uKi-3S-5wd" id="wlM-FD-uvy"/>
+                        <outlet property="nameTitle" destination="bkf-L4-i7f" id="CFK-yw-hQt"/>
+                        <outlet property="price" destination="Rf2-aT-fIx" id="MH2-gm-qBe"/>
+                        <outlet property="statePicker" destination="8ER-Qt-it2" id="w67-fC-fjE"/>
+                        <outlet property="statePickerBtn" destination="yXe-Qk-r17" id="AEs-Ac-U0N"/>
+                        <outlet property="stateTitle" destination="3zV-cg-k5t" id="UuH-ZJ-BNH"/>
+                        <outlet property="successBtn" destination="fsB-OQ-q3u" id="cEr-G5-XvU"/>
+                        <outlet property="zipField" destination="Duc-BJ-DAE" id="5QC-Lj-R3v"/>
+                        <outlet property="zipTitle" destination="Qwc-Oc-zv2" id="duh-Mz-sVX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,5 +229,6 @@
     <resources>
         <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
+        <image name="successIndicator" width="180" height="180"/>
     </resources>
 </document>
