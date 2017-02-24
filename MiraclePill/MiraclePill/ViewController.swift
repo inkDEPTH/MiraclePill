@@ -75,23 +75,26 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     @IBAction func buyBtnPressed(_ sender: Any) {
-        appLogo.isHidden = true
-        appTitle.isHidden = true
-        price.isHidden = true
-        divider.isHidden = true
-        nameTitle.isHidden = true
-        nameField.isHidden = true
-        addTitle.isHidden = true
-        addField.isHidden = true
-        cityTitle.isHidden = true
-        cityField.isHidden = true
-        stateTitle.isHidden = true
-        statePickerBtn.isHidden = true
-        countryTitle.isHidden = true
-        countryField.isHidden = true
-        zipTitle.isHidden = true
-        zipField.isHidden = true
-        buyBtn.isHidden = true
+//        appLogo.isHidden = true
+//        appTitle.isHidden = true
+//        price.isHidden = true
+//        divider.isHidden = true
+//        nameTitle.isHidden = true
+//        nameField.isHidden = true
+//        addTitle.isHidden = true
+//        addField.isHidden = true
+//        cityTitle.isHidden = true
+//        cityField.isHidden = true
+//        stateTitle.isHidden = true
+//        statePickerBtn.isHidden = true
+//        countryTitle.isHidden = true
+//        countryField.isHidden = true
+//        zipTitle.isHidden = true
+//        zipField.isHidden = true
+//        buyBtn.isHidden = true
+        for view in self.view.subviews as [UIView] {
+            view.isHidden = true
+        }
         successBtn.isHidden = false
     }
     

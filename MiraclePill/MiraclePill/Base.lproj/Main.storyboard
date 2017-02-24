@@ -116,7 +116,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXe-Qk-r17">
                                 <rect key="frame" x="20" y="431" width="374" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Choose Your State..."/>
                                 <connections>
                                     <action selector="stateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTq-tA-fNL"/>
                                 </connections>
