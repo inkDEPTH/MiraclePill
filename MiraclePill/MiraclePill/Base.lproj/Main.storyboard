@@ -126,6 +126,9 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="buyNowBtn"/>
                             </button>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ER-Qt-it2">
+                                <rect key="frame" x="47" y="469" width="320" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -159,6 +162,7 @@
                             <constraint firstItem="gGW-n2-QSD" firstAttribute="leading" secondItem="uKi-3S-5wd" secondAttribute="leading" id="WOI-Q7-S0N"/>
                             <constraint firstItem="Rf2-aT-fIx" firstAttribute="top" secondItem="YcY-HO-uj2" secondAttribute="bottom" constant="8" id="YVg-OG-K6Y"/>
                             <constraint firstItem="uKi-3S-5wd" firstAttribute="leading" secondItem="bkf-L4-i7f" secondAttribute="leading" id="ZDM-jM-n2z"/>
+                            <constraint firstItem="8ER-Qt-it2" firstAttribute="top" secondItem="yXe-Qk-r17" secondAttribute="bottom" constant="8" id="b3b-ms-GcD"/>
                             <constraint firstItem="ql7-z3-2K7" firstAttribute="trailing" secondItem="YIr-0I-C6B" secondAttribute="trailing" id="dCb-z0-HrG"/>
                             <constraint firstItem="Qwc-Oc-zv2" firstAttribute="top" secondItem="zEV-mJ-DZX" secondAttribute="bottom" constant="8" id="fb9-oQ-yfa"/>
                             <constraint firstItem="VuN-oh-BgI" firstAttribute="top" secondItem="ql7-z3-2K7" secondAttribute="bottom" constant="8" id="gDJ-sE-3TW"/>
@@ -173,6 +177,7 @@
                             <constraint firstItem="uKi-3S-5wd" firstAttribute="trailing" secondItem="bkf-L4-i7f" secondAttribute="trailing" id="pGU-eD-7Bl"/>
                             <constraint firstItem="eSG-pH-GIX" firstAttribute="top" secondItem="yXe-Qk-r17" secondAttribute="bottom" constant="8" id="sNT-mH-x0v"/>
                             <constraint firstItem="bkf-L4-i7f" firstAttribute="trailing" secondItem="JQ9-rd-eAJ" secondAttribute="trailing" id="tNt-CU-QeT"/>
+                            <constraint firstItem="8ER-Qt-it2" firstAttribute="centerX" secondItem="yXe-Qk-r17" secondAttribute="centerX" id="vI4-OT-3GS"/>
                             <constraint firstItem="Qwc-Oc-zv2" firstAttribute="trailing" secondItem="zEV-mJ-DZX" secondAttribute="trailing" id="waW-7D-zdJ"/>
                             <constraint firstItem="yXe-Qk-r17" firstAttribute="top" secondItem="3zV-cg-k5t" secondAttribute="bottom" constant="8" id="xW4-DA-RYD"/>
                             <constraint firstItem="YcY-HO-uj2" firstAttribute="centerX" secondItem="G69-Uz-PSJ" secondAttribute="centerX" id="yiZ-VS-MLl"/>
