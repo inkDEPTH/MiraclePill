@@ -72,6 +72,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         zipTitle.isHidden = false
         zipField.isHidden = false
         buyBtn.isHidden = false
+        print("hellow world")
     }
     
     @IBAction func buyBtnPressed(_ sender: Any) {
